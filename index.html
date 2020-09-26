@@ -36,6 +36,10 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -137,7 +141,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('https://s1.ax1x.com/2020/09/26/0CqVr4.jpg') no-repeat center center;
+         style="background: url('https://s1.ax1x.com/2020/09/26/0PGzIU.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
@@ -189,17 +193,29 @@
     
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
-        <a href="/2020/09/25/hello-world/">Hello World</a>
+        <a href="/2020/09/26/hello-world%20-%20%E5%89%AF%E6%9C%AC/">我的第一个博客</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2020/09/25/hello-world/">
+        <a href="/2020/09/26/hello-world%20-%20%E5%89%AF%E6%9C%AC/">
           
           
             
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
+          欢迎来到的我的第一个博客，一个稍微完全体的博客，仅用于测试文本，部分翻译成中文。
+新建一个文章$ hexo new &quot;My New Post&quot;
+
+部署$ hexo server
+
+生成网站静态文件$ hexo generate
+
+上传到库$ hexo deploy
+
+
+
+
+
+以下是个人感慨：  俗话说。有志者事竟成，所以说，我相信没有做不到的，只有不愿去做的，还以一个观点是，当
         </a>
       </p>
 
@@ -207,12 +223,19 @@ Quick
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2020-09-25 22:59" pubdate>
-              2020-09-25
+            <time datetime="2020-09-26 11:47" pubdate>
+              2020-09-26
             </time>
           </div>
         
         
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Fluid/">Fluid</a>
+            
+          </div>
         
       </div>
     </article>
@@ -264,7 +287,16 @@ Quick
 
   
 
-  <footer class="mt-5">
+  <script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto')
+      hitokoto.innerText = data.hitokoto
+      })
+      .catch(console.error)
+</script>
+<footer class="mt-5">
   <div class="text-center py-3">
     <div>
       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
@@ -304,6 +336,10 @@ Quick
 
 
 
+
+
+  
+<script src="/js/custom.js"></script>
 
 
 
@@ -400,7 +436,6 @@ Quick
       }(window, document);
     </script>
   
-
 
 
 
